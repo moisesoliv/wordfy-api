@@ -3,10 +3,10 @@
 O algoritmo do repositório transforma numeros em palavras.
 Para utilizar localmente no seu PC execute os seguintes comandos
 
-''' bash
+``` bash
 pip install -r requirements.txr
 python app.py
-'''
+```
 
 # Rodando os testes
 
