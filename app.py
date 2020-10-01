@@ -7,7 +7,7 @@ wordfy = Flask(__name__)
 @wordfy.route('/<n>')
 def num2txt(n):
     try:
-        return {'extenso': num2words(n,lang='pt_BR').replace(',','')}, 200
+        return {'extenso': num2words(n,lang='pt_BR').replace(',',' e')}, 200
     except:
         return '', 404
 
