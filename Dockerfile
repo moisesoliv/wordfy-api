@@ -1,8 +1,7 @@
 FROM python:latest
-WORKDIR /project
-ADD . /project
-RUN pip install -r requirements.txt
-# CMD ['py.test']
+WORKDIR /app
+COPY . /app
+COPY ./requirements.txt /app
+RUN pip install -r /app/requirements.txt
 EXPOSE 3000
-
-CMD ["python","app.py"]
+CMD ["python", "app.py"]

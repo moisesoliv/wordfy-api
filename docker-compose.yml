@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  flasksemaphore:
+    image: wordfy-api
+    container_name: wordfy-api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app/
+    environment:
+      - PORT=3000
