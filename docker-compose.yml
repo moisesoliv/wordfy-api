@@ -1,6 +1,6 @@
 version: '3.5'
 services:
-  flasksemaphore:
+  wordfy-flask-api:
     image: wordfy-api
     container_name: wordfy-api
     build:
