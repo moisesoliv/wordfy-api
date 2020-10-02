@@ -12,7 +12,7 @@ def num2txt(n):
         words = {'extenso': num2words(n,lang='pt_BR').replace(',',' e')}
         return words, 200
     except:
-        return '', 404
+        return (n + ' nao é um numero valido'), 404
 
 
 if __name__ == '__main__':
