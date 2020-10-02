@@ -16,7 +16,7 @@ python app.py
 # Rodando com Docker
 
 Para rodar 
-`docker-compose up --build`
+`docker-compose up`
 
 # Exemplo de uso
 
