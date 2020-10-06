@@ -1,8 +1,9 @@
 # Importamos nosso app
 from app import wordfy
-
+from num2words import num2words
 # Importamos a biblioteca de testes
 import unittest
+import random
 
 
 class TestHomeView(unittest.TestCase):
@@ -31,3 +32,11 @@ class TestHomeView(unittest.TestCase):
         app = wordfy.test_client()
         self.response = app.get('/1a2b3')
         self.assertEqual(404, self.response.status_code)
+
+    # test aleatorio
+    def test_random(self):
+        number = random.randint(-99999,99999)
+        app = wordfy.test_client()
+        self.response = app.get('/'+str(number))
+        self.assertEqual(num2words(number, lang='pt_BR').replace(', ',' e '), self.response.json['extenso'])
+
