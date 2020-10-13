@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - "80:3000"
+      - "5000:5000"
     volumes:
       - .:/app/
     environment:
-      - PORT=80
+      - PORT=5000
