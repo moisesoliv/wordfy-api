@@ -17,4 +17,4 @@ def num2txt(n):
 
 
 if __name__ == '__main__':
-    wordfy.run(debug=True, host='0.0.0.0', port=3000)
+    wordfy.run(debug=True, host='0.0.0.0', port=5000)
