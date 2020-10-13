@@ -1,9 +1,11 @@
 from flask import Flask
 # from num2words import num2words
 from extenso import Converter
+import os
 
 wordfy = Flask(__name__)
 conv = Converter()
+port = int(os.environ.get("PORT", 5000))
 
 @wordfy.route('/<n>')
 def num2txt(n):
@@ -17,4 +19,4 @@ def num2txt(n):
 
 
 if __name__ == '__main__':
-    wordfy.run(debug=True, host='0.0.0.0', port=5000)
+    wordfy.run(debug=True, host='0.0.0.0', port=port)
