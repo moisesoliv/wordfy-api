@@ -11,7 +11,7 @@ python app.py
 
 # Rodando os testes
 
-`py.test`
+`pytest test_core.py`
 
 # Rodando com Docker
 
