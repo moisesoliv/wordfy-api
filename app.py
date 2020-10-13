@@ -5,7 +5,7 @@ import os
 
 wordfy = Flask(__name__)
 conv = Converter()
-port = int(os.environ.get("PORT", 5000))
+port = int(os.environ.get("$PORT", 5000))
 
 @wordfy.route('/<n>')
 def num2txt(n):
